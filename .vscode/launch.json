@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Debug App (DynamicNibProvider)",
+            "program": "${workspaceFolder:DynamicNib}/DynamicNibProvider/.build/debug/App",
+            "args": [],
+            "cwd": "${workspaceFolder:DynamicNib}/DynamicNibProvider",
+            "preLaunchTask": "swift: Build Debug App (DynamicNibProvider)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "name": "Release App (DynamicNibProvider)",
+            "program": "${workspaceFolder:DynamicNib}/DynamicNibProvider/.build/release/App",
+            "args": [],
+            "cwd": "${workspaceFolder:DynamicNib}/DynamicNibProvider",
+            "preLaunchTask": "swift: Build Release App (DynamicNibProvider)"
+        }
+    ]
+}
