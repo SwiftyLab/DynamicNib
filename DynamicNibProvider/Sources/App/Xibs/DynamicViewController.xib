@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
             <connections>
                 <outlet property="message" destination="YwE-f8-x6l" id="TGX-oj-7fs"/>
+                <outlet property="tableView" destination="cio-uy-5js" id="aT6-2b-kUT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,16 +21,23 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwE-f8-x6l">
-                    <rect key="frame" x="173.33333333333334" y="410.33333333333331" width="46.333333333333343" height="31.333333333333314"/>
+                    <rect key="frame" x="173.33333333333334" y="159" width="46.333333333333343" height="31.333333333333343"/>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cio-uy-5js">
+                    <rect key="frame" x="0.0" y="200.33333333333331" width="393" height="617.66666666666674"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="YwE-f8-x6l" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="itS-65-q4n"/>
+                <constraint firstItem="cio-uy-5js" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BkP-sh-HL0"/>
+                <constraint firstItem="YwE-f8-x6l" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="QrE-mG-kuX"/>
+                <constraint firstItem="cio-uy-5js" firstAttribute="top" secondItem="YwE-f8-x6l" secondAttribute="bottom" constant="10" id="WSe-l8-YJP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cio-uy-5js" secondAttribute="trailing" id="cxj-19-4K0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cio-uy-5js" secondAttribute="bottom" id="lGm-P1-Iw3"/>
                 <constraint firstItem="YwE-f8-x6l" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pjQ-mB-gz5"/>
             </constraints>
             <point key="canvasLocation" x="138" y="20"/>

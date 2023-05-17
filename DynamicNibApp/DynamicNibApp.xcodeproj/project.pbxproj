@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6496489F2A13FA2100F7A120 /* DynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6496489D2A13FA2100F7A120 /* DynamicCell.swift */; };
 		A42804392A0915F2001C6774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42804382A0915F2001C6774 /* AppDelegate.swift */; };
 		A428043B2A0915F2001C6774 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428043A2A0915F2001C6774 /* SceneDelegate.swift */; };
 		A428043D2A0915F2001C6774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A428043C2A0915F2001C6774 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6496489D2A13FA2100F7A120 /* DynamicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCell.swift; sourceTree = "<group>"; };
 		A42804352A0915F2001C6774 /* DynamicNibApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicNibApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42804382A0915F2001C6774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A428043A2A0915F2001C6774 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A42804432A0915F3001C6774 /* LaunchScreen.storyboard */,
 				A42804462A0915F3001C6774 /* Info.plist */,
 				A428044C2A0917E3001C6774 /* DynamicViewController.swift */,
+				6496489D2A13FA2100F7A120 /* DynamicCell.swift */,
 			);
 			path = DynamicNibApp;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				A42804392A0915F2001C6774 /* AppDelegate.swift in Sources */,
 				A428044E2A0917E3001C6774 /* DynamicViewController.swift in Sources */,
 				A428043B2A0915F2001C6774 /* SceneDelegate.swift in Sources */,
+				6496489F2A13FA2100F7A120 /* DynamicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
