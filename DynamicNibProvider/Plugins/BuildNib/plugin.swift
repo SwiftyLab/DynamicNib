@@ -1,10 +1,6 @@
 import Foundation
 import PackagePlugin
 
-struct CustomError: Error {
-    let msg: String
-}
-
 @main
 struct BuildNib: BuildToolPlugin {
     func createBuildCommands(context: PluginContext, target: Target) async throws -> [Command] {
