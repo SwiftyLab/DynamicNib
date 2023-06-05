@@ -3,7 +3,7 @@ import JavaScriptCore
 
 @objc
 protocol JSViewControllerExport: JSExport {
-    var outlets: [String: AnyObject] { get }
+    var outlets: [String: Any] { get }
 }
 
 class JSViewController: UIViewController, JSViewControllerExport {
@@ -21,17 +21,13 @@ class JSViewController: UIViewController, JSViewControllerExport {
 
     // @IBOutlet weak var countLabel: UILabel!
     @objc
-    var outlets: [String: AnyObject] = [:]
+    var outlets: [String: Any] = [:]
 
     override func value(forUndefinedKey key: String) -> Any? {
         return outlets[key] ?? super.value(forUndefinedKey: key)
     }
 
     override func setValue(_ value: Any?, forUndefinedKey key: String) {
-        guard let value = value as? AnyObject else {
-            super.setValue(value, forUndefinedKey: key)
-            return
-        }
         outlets[key] = value
     }
 
